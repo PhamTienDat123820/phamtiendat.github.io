@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Tiến Đạt - Website cá nhân</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #0d47a1, #1976d2);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+        header h1 { font-size: 42px; margin-bottom: 10px; }
+        header p { font-size: 19px; }
+        nav {
+            background: #111;
+            text-align: center;
+            padding: 14px;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover { color: #64b5f6; }
+        section {
+            max-width: 900px;
+            margin: 25px auto;
+            background: white;
+            padding: 35px;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,.08);
+        }
+        h2 {
+            color: #0d47a1;
+            margin-bottom: 15px;
+        }
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .skill {
+            background: #e3f2fd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        .project {
+            border-left: 5px solid #1976d2;
+            padding: 15px;
+            margin-top: 15px;
+            background: #f7fbff;
+        }
+        footer {
+            text-align: center;
+            background: #111;
+            color: white;
+            padding: 25px;
+            margin-top: 30px;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 30px; }
+            .skills { grid-template-columns: 1fr; }
+            nav a { display: inline-block; margin: 5px 8px; }
+            section { margin: 15px; padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>PHẠM TIẾN ĐẠT</h1>
+    <p>Website cá nhân - Sinh viên Công nghệ Thông tin</p>
+</header>
+
+<nav>
+    <a href="#gioi-thieu">Giới thiệu</a>
+    <a href="#ky-nang">Kỹ năng</a>
+    <a href="#du-an">Dự án</a>
+    <a href="#lien-he">Liên hệ</a>
+</nav>
+
+<section id="gioi-thieu">
+    <h2>Giới thiệu</h2>
+    <p>
+        Xin chào! Mình là <strong>Phạm Tiến Đạt</strong>, sinh viên ngành
+        Công nghệ Thông tin. Mình đang học và tìm hiểu về lập trình,
+        thiết kế website và các công nghệ web.
+    </p>
+</section>
+
+<section id="ky-nang">
+    <h2>Kỹ năng</h2>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Java</div>
+        <div class="skill">C++</div>
+        <div class="skill">SQL</div>
+    </div>
+</section>
+
+<section id="du-an">
+    <h2>Dự án</h2>
+    <div class="project">
+        <h3>Website cá nhân</h3>
+        <p>Thiết kế website giới thiệu bản thân bằng HTML và CSS.</p>
+    </div>
+    <div class="project">
+        <h3>Website tin tức bóng đá</h3>
+        <p>Trang web tổng hợp thông tin bóng đá và Ngoại hạng Anh.</p>
+    </div>
+</section>
+
+<section id="lien-he">
+    <h2>Liên hệ</h2>
+    <p>Email: phamtien.dat@example.com</p>
+    <p>Website được tạo để phục vụ bài tập môn Thiết kế Web.</p>
+</section>
+
+<footer>
+    <p>© 2026 Phạm Tiến Đạt - Website cá nhân</p>
+</footer>
+
+</body>
+</html>
